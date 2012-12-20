@@ -15,7 +15,7 @@
 	</head>
      <body>
         <div id="main">
-            <div id="error">亲，您使用的浏览器无法支持即将显示的内容，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器哟~</div>
+            <div id="error">哎哟，你使用的浏览器无法支持即将显示的内容，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器~</div>
             <div id="wrap">
                 <div id="text">
 			        <div id="code">
@@ -41,11 +41,14 @@
                     <div id="clock"></div>
                 </div>
                 <canvas id="canvas"></canvas>
+                <div id="musicboxcontainer">
+            		<audio id="musicbox" controls="controls" autoplay="autoplay">
+            			<source src="love/nuannuan.ogg" type="audio/ogg"></source>
+            			<source src="love/nuannuan.mp3" type="audio/mpeg"></source>
+            			哎哟，你的浏览器不支持audio标签~
+            		</audio>
+            	</div>
             </div>
-            <!--
-            Angel说要听我唱, 这里注释掉 <(￣︶￣)>
-            <audio src="" autoplay="autoplay"></audio>
-            -->
         </div>
     </body>
     <script>
@@ -163,7 +166,7 @@
             foot.draw();
             tree.snapshot("p2", 500, 0, 610, 680);
 
-            // 会有闪烁不得意这样做, (＞﹏＜)
+            // 会有闪烁不得以这样做
             canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
             canvas.css("background", "#ffe");
             $await(Jscex.Async.sleep(300));

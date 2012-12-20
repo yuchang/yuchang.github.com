@@ -10,6 +10,8 @@ a {color:#000;font-size:14px;}
 #clock .digit {font-size:64px;}
 #canvas{margin:0 auto;width:1100px;height:680px;}
 #error{margin:0 auto;text-align:center;margin-top:60px;display:none;}
+#musicboxcontainer{text-align:center}
+#musicbox{margin: 0 auto; }
 .hand{cursor:pointer;}
 .say{margin-left:5px;}
 .space{margin-right:150px;}
