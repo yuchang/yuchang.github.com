@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'Josefin Slab'; 
+	font-style: normal; 
+	font-weight: 400; 
+	src: url("JosefinSlab.woff") format('woff');
+}
+
+* {
+	margin: 0;
+	padding:0;
+}
+
+html, body {
+	height: 100%;
+	width: 100%; 
+	background: #000; 
+	position: relative;
+}
+
+#myCanvas{
+	left: 50%;
+	position: absolute;
+	top: 20px;
+	margin-left: -550px;
+}
