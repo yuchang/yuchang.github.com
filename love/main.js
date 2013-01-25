@@ -111,8 +111,7 @@
         }
         foot.draw();
         tree.snapshot("p2", 500, 0, 610, 680);
-
-        // 会有闪烁不得以这样做
+        // 会有闪烁不得已这样做
         canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
         canvas.css("background", "#ffe");
         $await(Jscex.Async.sleep(300));
@@ -130,14 +129,12 @@
     }));
 
     var textAnimate = eval(Jscex.compile("async", function () {
-        // 2012-10-27 20:48:00
 	    var together = new Date();
 	    together.setFullYear(2012, 9, 27);
 	    together.setHours(20);
 	    together.setMinutes(48);
 	    together.setSeconds(0);
 	    together.setMilliseconds(0);
-
 	    $("#code").show().typewriter();
         $("#clock-box").fadeIn(500);
         while (true) {
@@ -151,9 +148,7 @@
         $await(growAnimate());
         $await(flowAnimate());
         $await(moveAnimate());
-
         textAnimate().start();
-
         $await(jumpAnimate());
     }));
 

@@ -1,4 +1,3 @@
-//HTML模板加载器
 Template = {
 
     tpls: {},
@@ -21,8 +20,6 @@ Template = {
     }
 };
 
-
-//全局变量
 var $win = $(window);
 var clientWidth = $win.width();
 var clientHeight = $win.height();
@@ -35,7 +32,6 @@ $(window).resize(function() {
     }
 });
 
-//jQuery插件：打字机效果
 (function($) {
 	$.fn.typewriter = function() {
 		this.each(function() {
@@ -58,7 +54,6 @@ $(window).resize(function() {
 	};
 })(jQuery);
 
-//时间计算与显示
 function timeElapse(date){
 	var current = Date();
 	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
