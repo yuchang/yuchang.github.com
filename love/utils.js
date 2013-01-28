@@ -1,1 +1,77 @@
-Template={tpls:{},loadTpls:function(a,c){var d=this,b=function(e){var f=a[e];console.log("Loading : "+f);$.get("love/"+f+".html",function(g){d.tpls[f]=g;++e<a.length?b(e):c()})};b(0)},get:function(a){return this.tpls[a]}};var $win=$(window),clientWidth=$win.width(),clientHeight=$win.height();$(window).resize(function(){var a=$win.width(),c=$win.height();a!=clientWidth&&c!=clientHeight&&location.replace(location)}); (function(a){a.fn.typewriter=function(){this.each(function(){var c=a(this),d=c.html(),b=0;c.html("");var e=setInterval(function(){"<"==d.substr(b,1)?b=d.indexOf(">",b)+1:b++;c.html(d.substring(0,b)+(b&1?"_":""));b>=d.length&&clearInterval(e)},75)});return this}})(jQuery); function timeElapse(a){var c=Date();a=(Date.parse(c)-Date.parse(a))/1E3;c=Math.floor(a/86400);a%=86400;var d=Math.floor(a/3600);10>d&&(d="0"+d);a%=3600;var b=Math.floor(a/60);10>b&&(b="0"+b);a%=60;10>a&&(a="0"+a);$("#clock").html('\u7b2c <span class="digit">'+c+'</span> \u5929 <span class="digit">'+d+'</span> \u5c0f\u65f6 <span class="digit">'+b+'</span> \u5206\u949f <span class="digit">'+a+"</span> \u79d2")};
+Template = {
+
+    tpls: {},
+ 
+    loadTpls: function(views, callback) {
+        var self = this;
+        var loadTpl = function(index) {
+            var view = views[index];
+            console.log("Loading : " + view);
+            $.get("love/" + view + ".html", function(template) {
+                self.tpls[view] = template;
+                ++index < views.length ? loadTpl(index):callback();
+            });
+        };
+        loadTpl(0);
+    },
+
+    get: function(view) {
+        return this.tpls[view];
+    }
+};
+
+var $win = $(window);
+var clientWidth = $win.width();
+var clientHeight = $win.height();
+
+$(window).resize(function() {
+    var newWidth = $win.width();
+    var newHeight = $win.height();
+    if (newWidth != clientWidth && newHeight != clientHeight) {
+        location.replace(location);
+    }
+});
+
+(function($) {
+	$.fn.typewriter = function() {
+		this.each(function() {
+			var $ele = $(this), str = $ele.html(), progress = 0;
+			$ele.html('');
+			var timer = setInterval(function() {
+				var current = str.substr(progress, 1);
+				if (current == '<') {
+					progress = str.indexOf('>', progress) + 1;
+				} else {
+					progress++;
+				}
+				$ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
+				if (progress >= str.length) {
+					clearInterval(timer);
+				}
+			}, 75);
+		});
+		return this;
+	};
+})(jQuery);
+
+function timeElapse(date){
+	var current = Date();
+	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
+	var days = Math.floor(seconds / (3600 * 24));
+	seconds = seconds % (3600 * 24);
+	var hours = Math.floor(seconds / 3600);
+	if (hours < 10) {
+		hours = "0" + hours;
+	}
+	seconds = seconds % 3600;
+	var minutes = Math.floor(seconds / 60);
+	if (minutes < 10) {
+		minutes = "0" + minutes;
+	}
+	seconds = seconds % 60;
+	if (seconds < 10) {
+		seconds = "0" + seconds;
+	}
+	var result = "第 <span class=\"digit\">" + days + "</span> 天 <span class=\"digit\">" + hours + "</span> 小时 <span class=\"digit\">" + minutes + "</span> 分钟 <span class=\"digit\">" + seconds + "</span> 秒"; 
+	$("#clock").html(result);
+}
