@@ -2,6 +2,7 @@
 	Template.loadTpls([
 	    'Header/Header',
 	    'Maquette/Maquette',
+	    'Footer/Footer',
 		
 	    //Insertion de nouveaux templates ici 
 	    ], function(){

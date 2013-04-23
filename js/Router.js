@@ -14,6 +14,7 @@ var AppPricing = Backbone.Router.extend({
 	
 	home : function() {
 		$('#content').html(new MaquetteV().render().el);
+		$('#bottombar').html(new FooterV().render().el);
 	},
 	
 });
