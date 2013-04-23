@@ -1,0 +1,882 @@
+<h2>Proposition de maquette pour le pricing</h2>
+<br />
+<div class="accordion" id="accordion2" style="background-color: white">
+	
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+        Règles concurentielles - Alignement sur le prix
+      </a>
+    </div>
+    <div id="collapseOne" class="accordion-body collapse in">
+      <div class="accordion-inner">
+      	
+		<form class="form-horizontal">
+			
+		  <div class="control-group">
+		    <label class="control-label" for="inputNom1">Nom</label>
+		    <div class="controls">
+		      <input type="text" id="inputNom1" placeholder="Nom du produit">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputCategory1">Catégorie</label>
+		    <div class="controls">
+			  <select id="inputCategory1">
+				  <option>Electroménager</option>
+				  <option>Cuisine</option>
+				  <option>Informatique</option>
+				  <option selected="selected">Alimentaire</option>
+				  <option>Boisson</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputMarque1">Marque</label>
+		    <div class="controls">
+		      <input type="text" id="inputMarque1" data-provide="typeahead" data-items="4" data-source="[&quot;AUCHAN&quot;,&quot;SAMSUNG&quot;,&quot;SIRTAM&quot;,&quot;SANDISK&quot;,&quot;CARTE NOIRE&quot;,&quot;POUCE&quot;,&quot;JOKER&quot;,&quot;CÔTE D&acute;OR&quot;,&quot;CARREFOUR&quot;,&quot;MONOPRIX&quot;]" placeholder="Marque">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputConditionnement1">Conditionnement</label>
+		    <div class="controls">
+		      <input class="inline input-medium" type="number" id="inputConditionnement1" placeholder="Conditionnement">
+		      <select class="inline input-medium">
+				  <option selected="selected">Grammes</option>
+				  <option>Kilogrammes</option>
+				  <option>Centilitre</option>
+				  <option>Millilitre</option>
+				  <option>Litre</option>
+			  </select>
+		    </div>
+		  </div>		  
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputPrix1">Prix proposé</label>
+		    <div class="controls">
+		    	<div class="input-prepend">
+		    		<span class="add-on">€</span>
+		      		<input class="input-small" type="text" id="inputPrix1" placeholder="Prix proposé">
+		      	</div>
+		    </div>
+		  </div>		  
+		  
+		  <div class="control-group">
+		  	<label class="control-label" for="inputAlignement">Type d'alignement</label>
+		    <div class="controls">
+				<label class="radio">
+					<input type="radio" name="alignement" id="leplusbas" value="bas">
+					Le plus bas
+				</label>
+				<label class="radio">
+					<input type="radio" name="alignement" id="moyen" value="moyen">
+					Moyen
+				</label>
+				<label class="radio">
+					<input type="radio" name="alignement" id="leplusfrequent" value="frequent">
+					Le plus fréquent
+				</label>				
+		    </div>
+		  </div>
+		  
+		  <div class="form-actions" style="margin: 0">
+			<button type="submit" class="btn btn-primary">Envoyer</button>
+			<button type="button" class="btn btn-danger">Annuler</button>
+		  </div>
+		  
+		</form>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+        Règles de rentabilité - Taux de marge à respecter
+      </a>
+    </div>
+    <div id="collapseTwo" class="accordion-body collapse">
+      <div class="accordion-inner">
+      	
+        <form class="form-horizontal">
+ 		  <div class="control-group">
+		    <label class="control-label" for="inputNom2">Nom</label>
+		    <div class="controls">
+		      <input type="text" id="inputNom2" placeholder="Nom du produit">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputCategory2">Catégorie</label>
+		    <div class="controls">
+			  <select id="inputCategory2">
+				  <option>Electroménager</option>
+				  <option>Cuisine</option>
+				  <option>Informatique</option>
+				  <option selected="selected">Alimentaire</option>
+				  <option>Boisson</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputMarque2">Marque</label>
+		    <div class="controls">
+		      <input type="text" id="inputMarque2" data-provide="typeahead" data-items="4" data-source="[&quot;AUCHAN&quot;,&quot;SAMSUNG&quot;,&quot;SIRTAM&quot;,&quot;SANDISK&quot;,&quot;CARTE NOIRE&quot;,&quot;POUCE&quot;,&quot;JOKER&quot;,&quot;CÔTE D&acute;OR&quot;,&quot;CARREFOUR&quot;,&quot;MONOPRIX&quot;]" placeholder="Marque">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputConditionnement2">Conditionnement</label>
+		    <div class="controls">
+		      <input class="inline input-medium" type="number" id="inputConditionnement2" placeholder="Conditionnement">
+		      <select class="inline input-medium">
+				  <option selected="selected">Grammes</option>
+				  <option>Kilogrammes</option>
+				  <option>Centilitre</option>
+				  <option>Millilitre</option>
+				  <option>Litre</option>
+			  </select>
+		    </div>
+		  </div>		  
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputPrix2">Prix proposé</label>
+		    <div class="controls">
+		    	<div class="input-prepend">
+		    		<span class="add-on">€</span>
+		      		<input class="input-small" type="text" id="inputPrix2" placeholder="Prix proposé">
+		      	</div>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputMarge">Taux de marge</label>
+		    <div class="controls">
+		    	<div class="input-append">
+		      		<input class="input-small" type="text" id="inputMarge" placeholder="Taux de marge à respecter">
+		      		<span class="add-on">%</span>
+		      	</div>
+		    </div>
+		  </div>		  
+		  
+		  <div class="form-actions" style="margin: 0">
+			<button type="submit" class="btn btn-primary">Envoyer</button>
+			<button type="button" class="btn btn-danger">Annuler</button>
+		  </div>		  
+		  		  		         	
+        </form>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+        Règles de rentabilité - Prix plancher à ne pas dépasser
+      </a>
+    </div>
+    <div id="collapseThree" class="accordion-body collapse">
+      <div class="accordion-inner">
+      	
+        <form class="form-horizontal">
+ 		  <div class="control-group">
+		    <label class="control-label" for="inputNom3">Nom</label>
+		    <div class="controls">
+		      <input type="text" id="inputNom3" placeholder="Nom du produit">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputCategory3">Catégorie</label>
+		    <div class="controls">
+			  <select id="inputCategory3">
+				  <option>Electroménager</option>
+				  <option>Cuisine</option>
+				  <option>Informatique</option>
+				  <option selected="selected">Alimentaire</option>
+				  <option>Boisson</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputMarque3">Marque</label>
+		    <div class="controls">
+		      <input type="text" id="inputMarque3" data-provide="typeahead" data-items="4" data-source="[&quot;AUCHAN&quot;,&quot;SAMSUNG&quot;,&quot;SIRTAM&quot;,&quot;SANDISK&quot;,&quot;CARTE NOIRE&quot;,&quot;POUCE&quot;,&quot;JOKER&quot;,&quot;CÔTE D&acute;OR&quot;,&quot;CARREFOUR&quot;,&quot;MONOPRIX&quot;]" placeholder="Marque">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputConditionnement3">Conditionnement</label>
+		    <div class="controls">
+		      <input class="inline input-medium" type="number" id="inputConditionnement3" placeholder="Conditionnement">
+		      <select class="inline input-medium">
+				  <option selected="selected">Grammes</option>
+				  <option>Kilogrammes</option>
+				  <option>Centilitre</option>
+				  <option>Millilitre</option>
+				  <option>Litre</option>
+			  </select>
+		    </div>
+		  </div>		  
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputPrix3">Prix proposé</label>
+		    <div class="controls">
+		    	<div class="input-prepend">
+		    		<span class="add-on">€</span>
+		      		<input class="input-small" type="text" id="inputPrix3" placeholder="Prix proposé">
+		      	</div>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputPrix31">Prix plancher</label>
+		    <div class="controls">
+		    	<div class="input-prepend">
+		    		<span class="add-on">€</span>
+		      		<input class="input-small" type="text" id="inputPrix31" placeholder="Prix plancher">
+		      	</div>
+		    </div>
+		  </div>	  
+		  
+		  <div class="form-actions" style="margin: 0">
+			<button type="submit" class="btn btn-primary">Envoyer</button>
+			<button type="button" class="btn btn-danger">Annuler</button>
+		  </div>		  
+		  		  		         	
+        </form>
+        
+      </div>
+    </div>
+  </div> 
+  
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+        Règles de cohérence de gamme - Différents parfums ou coloris au même tarif
+      </a>
+    </div>
+    <div id="collapseFour" class="accordion-body collapse">
+      <div class="accordion-inner">
+      	
+        <form class="form-horizontal">
+ 		  <div class="control-group">
+		    <label class="control-label" for="inputNom4">Nom</label>
+		    <div class="controls">
+		      <input type="text" id="inputNom4" placeholder="Nom du produit">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputCategory4">Catégorie</label>
+		    <div class="controls">
+			  <select id="inputCategory4">
+				  <option>Electroménager</option>
+				  <option>Cuisine</option>
+				  <option>Informatique</option>
+				  <option selected="selected">Alimentaire</option>
+				  <option>Boisson</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputMarque4">Marque</label>
+		    <div class="controls">
+		      <input type="text" id="inputMarque4" data-provide="typeahead" data-items="4" data-source="[&quot;AUCHAN&quot;,&quot;SAMSUNG&quot;,&quot;SIRTAM&quot;,&quot;SANDISK&quot;,&quot;CARTE NOIRE&quot;,&quot;POUCE&quot;,&quot;JOKER&quot;,&quot;CÔTE D&acute;OR&quot;,&quot;CARREFOUR&quot;,&quot;MONOPRIX&quot;]" placeholder="Marque">
+		    </div>
+		  </div>		  
+
+		  <div class="control-group">
+		    <label class="control-label" for="inputConditionnement4">Conditionnement</label>
+		    <div class="controls">
+		      <input class="inline input-medium" type="number" id="inputConditionnement4" placeholder="Conditionnement">
+		      <select class="inline input-medium">
+				  <option selected="selected">Grammes</option>
+				  <option>Kilogrammes</option>
+				  <option>Centilitre</option>
+				  <option>Millilitre</option>
+				  <option>Litre</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="form-actions" style="margin: 0">
+			<button type="submit" class="btn btn-primary">Envoyer</button>
+			<button type="button" class="btn btn-danger">Annuler</button>
+		  </div>  
+		  		  		         	
+        </form>
+        
+      </div>
+    </div>
+  </div>   
+  
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+        Règles de cohérence de gamme - Conditionnements plus importants ne doivent pas être plus chers au poids
+      </a>
+    </div>
+    <div id="collapseFive" class="accordion-body collapse">
+      <div class="accordion-inner">
+      	
+        <form class="form-horizontal">
+ 		  <div class="control-group">
+		    <label class="control-label" for="inputNom5">Nom</label>
+		    <div class="controls">
+		      <input type="text" id="inputNom5" placeholder="Nom du produit">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputCategory5">Catégorie</label>
+		    <div class="controls">
+			  <select id="inputCategory5">
+				  <option>Electroménager</option>
+				  <option>Cuisine</option>
+				  <option>Informatique</option>
+				  <option selected="selected">Alimentaire</option>
+				  <option>Boisson</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputMarque5">Marque</label>
+		    <div class="controls">
+		      <input type="text" id="inputMarque5" data-provide="typeahead" data-items="4" data-source="[&quot;AUCHAN&quot;,&quot;SAMSUNG&quot;,&quot;SIRTAM&quot;,&quot;SANDISK&quot;,&quot;CARTE NOIRE&quot;,&quot;POUCE&quot;,&quot;JOKER&quot;,&quot;CÔTE D&acute;OR&quot;,&quot;CARREFOUR&quot;,&quot;MONOPRIX&quot;]" placeholder="Marque">
+		    </div>
+		  </div>		  
+		  
+		  <div class="form-actions" style="margin: 0">
+			<button type="submit" class="btn btn-primary">Envoyer</button>
+			<button type="button" class="btn btn-danger">Annuler</button>
+		  </div>  
+		  
+        </form>
+        
+      </div>
+    </div>
+  </div>     
+  
+ 
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
+        Règles de cohérence de gamme - Prix PP &lt; MDD &lt; MN			
+      </a>
+    </div>
+    <div id="collapseSix" class="accordion-body collapse">
+      <div class="accordion-inner">
+      	
+        <form class="form-horizontal">
+ 		  <div class="control-group">
+		    <label class="control-label" for="inputNom6">Nom</label>
+		    <div class="controls">
+		      <input type="text" id="inputNom6" placeholder="Nom du produit">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputCategory6">Catégorie</label>
+		    <div class="controls">
+			  <select id="inputCategory6">
+				  <option>Electroménager</option>
+				  <option>Cuisine</option>
+				  <option>Informatique</option>
+				  <option selected="selected">Alimentaire</option>
+				  <option>Boisson</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputMarque6">Marque</label>
+		    <div class="controls">
+		      <input type="text" id="inputMarque6" data-provide="typeahead" data-items="4" data-source="[&quot;AUCHAN&quot;,&quot;SAMSUNG&quot;,&quot;SIRTAM&quot;,&quot;SANDISK&quot;,&quot;CARTE NOIRE&quot;,&quot;POUCE&quot;,&quot;JOKER&quot;,&quot;CÔTE D&acute;OR&quot;,&quot;CARREFOUR&quot;,&quot;MONOPRIX&quot;]" placeholder="Marque">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputConditionnement6">Conditionnement</label>
+		    <div class="controls">
+		      <input class="inline input-medium" type="number" id="inputConditionnement6" placeholder="Conditionnement">
+		      <select class="inline input-medium">
+				  <option selected="selected">Grammes</option>
+				  <option>Kilogrammes</option>
+				  <option>Centilitre</option>
+				  <option>Millilitre</option>
+				  <option>Litre</option>
+			  </select>
+		    </div>
+		  </div>		  
+		  
+		  <div class="form-actions" style="margin: 0">
+			<button type="submit" class="btn btn-primary">Envoyer</button>
+			<button type="button" class="btn btn-danger">Annuler</button>
+		  </div>  
+		  
+        </form>
+        
+      </div>
+    </div>
+  </div>    
+  
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven">
+        Règles de cohérence générale - Alertes sur anomalies : écart trop important dans les relevés de prix de la concurrence			
+      </a>
+    </div>
+    <div id="collapseSeven" class="accordion-body collapse">
+      <div class="accordion-inner">
+      	
+        <form class="form-horizontal">
+ 		  <div class="control-group">
+		    <label class="control-label" for="inputNom7">Nom</label>
+		    <div class="controls">
+		      <input type="text" id="inputNom7" placeholder="Nom du produit">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputCategory7">Catégorie</label>
+		    <div class="controls">
+			  <select id="inputCategory7">
+				  <option>Electroménager</option>
+				  <option>Cuisine</option>
+				  <option>Informatique</option>
+				  <option selected="selected">Alimentaire</option>
+				  <option>Boisson</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputMarque7">Marque</label>
+		    <div class="controls">
+		      <input type="text" id="inputMarque7" data-provide="typeahead" data-items="4" data-source="[&quot;AUCHAN&quot;,&quot;SAMSUNG&quot;,&quot;SIRTAM&quot;,&quot;SANDISK&quot;,&quot;CARTE NOIRE&quot;,&quot;POUCE&quot;,&quot;JOKER&quot;,&quot;CÔTE D&acute;OR&quot;,&quot;CARREFOUR&quot;,&quot;MONOPRIX&quot;]" placeholder="Marque">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputConditionnement7">Conditionnement</label>
+		    <div class="controls">
+		      <input class="inline input-medium" type="number" id="inputConditionnement7" placeholder="Conditionnement">
+		      <select class="inline input-medium">
+				  <option selected="selected">Grammes</option>
+				  <option>Kilogrammes</option>
+				  <option>Centilitre</option>
+				  <option>Millilitre</option>
+				  <option>Litre</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+ 		  <div class="control-group">
+		    <label class="control-label" for="inputEcart7">Ecart maximal de prix</label>
+		    <div class="controls">
+		      <div class="input-append">
+		      	<input type="text" id="inputEcart7" class="input-medium" placeholder="Ecart maximal de prix">
+		      	<span class="add-on">%</span>
+		      </div>
+		    </div>
+		  </div>		  
+		  
+		  <div class="form-actions" style="margin: 0">
+			<button type="submit" class="btn btn-primary">Envoyer</button>
+			<button type="button" class="btn btn-danger">Annuler</button>
+		  </div>  
+		  
+        </form>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight">
+        Règles d’accord commercial - Prix recommandé fournisseur			
+      </a>
+    </div>
+    <div id="collapseEight" class="accordion-body collapse">
+      <div class="accordion-inner">
+      	
+        <form class="form-horizontal">
+ 		  <div class="control-group">
+		    <label class="control-label" for="inputNom8">Nom</label>
+		    <div class="controls">
+		      <input type="text" id="inputNom8" placeholder="Nom du produit">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputCategory8">Catégorie</label>
+		    <div class="controls">
+			  <select id="inputCategory8">
+				  <option>Electroménager</option>
+				  <option>Cuisine</option>
+				  <option>Informatique</option>
+				  <option selected="selected">Alimentaire</option>
+				  <option>Boisson</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputMarque8">Marque</label>
+		    <div class="controls">
+		      <input type="text" id="inputMarque8" data-provide="typeahead" data-items="4" data-source="[&quot;AUCHAN&quot;,&quot;SAMSUNG&quot;,&quot;SIRTAM&quot;,&quot;SANDISK&quot;,&quot;CARTE NOIRE&quot;,&quot;POUCE&quot;,&quot;JOKER&quot;,&quot;CÔTE D&acute;OR&quot;,&quot;CARREFOUR&quot;,&quot;MONOPRIX&quot;]" placeholder="Marque">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputConditionnement8">Conditionnement</label>
+		    <div class="controls">
+		      <input class="inline input-medium" type="number" id="inputConditionnement8" placeholder="Conditionnement">
+		      <select class="inline input-medium">
+				  <option selected="selected">Grammes</option>
+				  <option>Kilogrammes</option>
+				  <option>Centilitre</option>
+				  <option>Millilitre</option>
+				  <option>Litre</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputPrix8">Prix recommandé</label>
+		    <div class="controls">
+		    	<div class="input-prepend">
+		    		<span class="add-on">€</span>
+		      		<input class="input-small" type="text" id="inputPrix8" placeholder="Prix recommandé fournisseur">
+		      	</div>
+		    </div>
+		  </div>
+		  
+ 		  <div class="control-group">
+		    <label class="control-label" for="inputErreur8">Erreur maximale tolérée</label>
+		    <div class="controls">
+		      <div class="input-append">
+		      	<input type="text" id="inputErreur8" class="input-medium" placeholder="Erreur maximale tolérée">
+		      	<span class="add-on">%</span>
+		      </div>
+		    </div>
+		  </div>
+	
+		  
+		  <div class="form-actions" style="margin: 0">
+			<button type="submit" class="btn btn-primary">Envoyer</button>
+			<button type="button" class="btn btn-danger">Annuler</button>
+		  </div>  
+		  
+        </form>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseNine">
+        Règles de localisation - Majoration % selon le type de surface			
+      </a>
+    </div>
+    <div id="collapseNine" class="accordion-body collapse">
+      <div class="accordion-inner">
+      	
+        <form class="form-horizontal">
+        	
+          
+  		  <div class="control-group">
+		    <label class="control-label" for="inputRefSurface9">Référence de surface</label>
+		    <div class="controls">
+		      <div class="input-append">
+		      	<input type="number" class="input-medium"  id="inputRefSurface9" placeholder="Référence de surface">
+		      	<span class="add-on">m²</span>
+		      </div>
+		    </div>
+		  </div>         
+		  
+ 		  <div class="control-group">
+		    <label class="control-label" for="inputSurfaceMagasin9">Surface de magasin</label>
+		    <div class="controls">
+		      <div class="input-append">
+		      	<input type="number" class="input-medium" id="inputSurfaceMagasin9" class="input-medium" placeholder="Surface de magasin">
+		      	<span class="add-on">m²</span>
+		      </div>
+		    </div>
+		  </div>
+          
+ 		  <div class="control-group">
+		    <label class="control-label" for="inputNom9">Nom</label>
+		    <div class="controls">
+		      <input type="text" id="inputNom9" placeholder="Nom du produit">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputCategory9">Catégorie</label>
+		    <div class="controls">
+			  <select id="inputCategory9">
+				  <option>Electroménager</option>
+				  <option>Cuisine</option>
+				  <option>Informatique</option>
+				  <option selected="selected">Alimentaire</option>
+				  <option>Boisson</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputMarque9">Marque</label>
+		    <div class="controls">
+		      <input type="text" id="inputMarque9" data-provide="typeahead" data-items="4" data-source="[&quot;AUCHAN&quot;,&quot;SAMSUNG&quot;,&quot;SIRTAM&quot;,&quot;SANDISK&quot;,&quot;CARTE NOIRE&quot;,&quot;POUCE&quot;,&quot;JOKER&quot;,&quot;CÔTE D&acute;OR&quot;,&quot;CARREFOUR&quot;,&quot;MONOPRIX&quot;]" placeholder="Marque">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputConditionnement9">Conditionnement</label>
+		    <div class="controls">
+		      <input class="inline input-medium" type="number" id="inputConditionnement9" placeholder="Conditionnement">
+		      <select class="inline input-medium">
+				  <option selected="selected">Grammes</option>
+				  <option>Kilogrammes</option>
+				  <option>Centilitre</option>
+				  <option>Millilitre</option>
+				  <option>Litre</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputPrix9">Prix proposé</label>
+		    <div class="controls">
+		    	<div class="input-prepend">
+		    		<span class="add-on">€</span>
+		      		<input class="input-small" type="text" id="inputPrix9" placeholder="Prix proposé">
+		      	</div>
+		    </div>
+		  </div>
+		  
+		  <div class="form-actions" style="margin: 0">
+			<button type="submit" class="btn btn-primary">Envoyer</button>
+			<button type="button" class="btn btn-danger">Annuler</button>
+		  </div>  
+		  
+        </form>
+        
+      </div>
+    </div>
+  </div>  
+  
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTen">
+        Règles légales - Interdiction de la vente à perte (comparaison au prix net)			
+      </a>
+    </div>
+    <div id="collapseTen" class="accordion-body collapse">
+      <div class="accordion-inner">
+      	
+        <form class="form-horizontal">
+
+ 		  <div class="control-group">
+		    <label class="control-label" for="inputNom10">Nom</label>
+		    <div class="controls">
+		      <input type="text" id="inputNom10" placeholder="Nom du produit">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputCategory10">Catégorie</label>
+		    <div class="controls">
+			  <select id="inputCategory10">
+				  <option>Electroménager</option>
+				  <option>Cuisine</option>
+				  <option>Informatique</option>
+				  <option selected="selected">Alimentaire</option>
+				  <option>Boisson</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputMarque10">Marque</label>
+		    <div class="controls">
+		      <input type="text" id="inputMarque10" data-provide="typeahead" data-items="4" data-source="[&quot;AUCHAN&quot;,&quot;SAMSUNG&quot;,&quot;SIRTAM&quot;,&quot;SANDISK&quot;,&quot;CARTE NOIRE&quot;,&quot;POUCE&quot;,&quot;JOKER&quot;,&quot;CÔTE D&acute;OR&quot;,&quot;CARREFOUR&quot;,&quot;MONOPRIX&quot;]" placeholder="Marque">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputConditionnement10">Conditionnement</label>
+		    <div class="controls">
+		      <input class="inline input-medium" type="number" id="inputConditionnement10" placeholder="Conditionnement">
+		      <select class="inline input-medium">
+				  <option selected="selected">Grammes</option>
+				  <option>Kilogrammes</option>
+				  <option>Centilitre</option>
+				  <option>Millilitre</option>
+				  <option>Litre</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  
+		  <div class="form-actions" style="margin: 0">
+			<button type="submit" class="btn btn-primary">Envoyer</button>
+			<button type="button" class="btn btn-danger">Annuler</button>
+		  </div>  
+		  
+        </form>
+        
+      </div>
+    </div>
+  </div>    
+  
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEleven">
+        Règles d’écoulement des stocks - Démarques selon niveau de stock et élasticité du produit					
+      </a>
+    </div>
+    <div id="collapseEleven" class="accordion-body collapse">
+      <div class="accordion-inner">
+      	
+        <form class="form-horizontal">
+
+ 		  <div class="control-group">
+		    <label class="control-label" for="inputNom11">Nom</label>
+		    <div class="controls">
+		      <input type="text" id="inputNom11" placeholder="Nom du produit">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputCategory11">Catégorie</label>
+		    <div class="controls">
+			  <select id="inputCategory11">
+				  <option>Electroménager</option>
+				  <option>Cuisine</option>
+				  <option>Informatique</option>
+				  <option selected="selected">Alimentaire</option>
+				  <option>Boisson</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputMarque11">Marque</label>
+		    <div class="controls">
+		      <input type="text" id="inputMarque11" data-provide="typeahead" data-items="4" data-source="[&quot;AUCHAN&quot;,&quot;SAMSUNG&quot;,&quot;SIRTAM&quot;,&quot;SANDISK&quot;,&quot;CARTE NOIRE&quot;,&quot;POUCE&quot;,&quot;JOKER&quot;,&quot;CÔTE D&acute;OR&quot;,&quot;CARREFOUR&quot;,&quot;MONOPRIX&quot;]" placeholder="Marque">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputConditionnement11">Conditionnement</label>
+		    <div class="controls">
+		      <input class="inline input-medium" type="number" id="inputConditionnement11" placeholder="Conditionnement">
+		      <select class="inline input-medium">
+				  <option selected="selected">Grammes</option>
+				  <option>Kilogrammes</option>
+				  <option>Centilitre</option>
+				  <option>Millilitre</option>
+				  <option>Litre</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  
+		  <div class="form-actions" style="margin: 0">
+			<button type="submit" class="btn btn-primary">Envoyer</button>
+			<button type="button" class="btn btn-danger">Annuler</button>
+		  </div>  
+		  
+        </form>
+        
+      </div>
+    </div>
+  </div>    
+  
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEleven">
+        Règles diverses - Arrondis psychologiques des prix					
+      </a>
+    </div>
+    <div id="collapseEleven" class="accordion-body collapse">
+      <div class="accordion-inner">
+      	
+        <form class="form-horizontal">
+
+ 		  <div class="control-group">
+		    <label class="control-label" for="inputNom12">Nom</label>
+		    <div class="controls">
+		      <input type="text" id="inputNom12" placeholder="Nom du produit">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputCategory12">Catégorie</label>
+		    <div class="controls">
+			  <select id="inputCategory12">
+				  <option>Electroménager</option>
+				  <option>Cuisine</option>
+				  <option>Informatique</option>
+				  <option selected="selected">Alimentaire</option>
+				  <option>Boisson</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputMarque12">Marque</label>
+		    <div class="controls">
+		      <input type="text" id="inputMarque12" data-provide="typeahead" data-items="4" data-source="[&quot;AUCHAN&quot;,&quot;SAMSUNG&quot;,&quot;SIRTAM&quot;,&quot;SANDISK&quot;,&quot;CARTE NOIRE&quot;,&quot;POUCE&quot;,&quot;JOKER&quot;,&quot;CÔTE D&acute;OR&quot;,&quot;CARREFOUR&quot;,&quot;MONOPRIX&quot;]" placeholder="Marque">
+		    </div>
+		  </div>
+		  
+		  <div class="control-group">
+		    <label class="control-label" for="inputConditionnement12">Conditionnement</label>
+		    <div class="controls">
+		      <input class="inline input-medium" type="number" id="inputConditionnement12" placeholder="Conditionnement">
+		      <select class="inline input-medium">
+				  <option selected="selected">Grammes</option>
+				  <option>Kilogrammes</option>
+				  <option>Centilitre</option>
+				  <option>Millilitre</option>
+				  <option>Litre</option>
+			  </select>
+		    </div>
+		  </div>
+		  
+		  
+		  <div class="form-actions" style="margin: 0">
+			<button type="submit" class="btn btn-primary">Envoyer</button>
+			<button type="button" class="btn btn-danger">Annuler</button>
+		  </div>  
+		  
+        </form>
+        
+      </div>
+    </div>
+  </div>    
+
+</div>
